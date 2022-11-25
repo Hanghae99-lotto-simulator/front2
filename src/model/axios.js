@@ -16,8 +16,8 @@ export const getPageWinNumber = async (page) => {
   return response.data;
 };
 
-export const getPageWinCount = async (page) => {
-  const response = await instance.get(`/api/winningNums/${page}`);
+// export const getPageWinCount = async (page) => {
+//   const response = await instance.get(`/api/winningNums/${page}`);
 
-  return response.data;
-};
+//   return response.data;
+// };

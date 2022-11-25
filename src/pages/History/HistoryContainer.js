@@ -15,7 +15,6 @@ const HistoryContainer = () => {
   const numbers = useMemo(() => {
     let list = [];
     let list2=[];
-    let bonusNum=winNumber?.bonusNu;
     if (winNumber) {
       Object.entries(winNumber?.roundArray).forEach(([key, value]) => {
           list2.push(value);
@@ -67,7 +66,7 @@ const HistoryContainer = () => {
         <span className={styles.selectLabel}>회차 바로가기</span>
         <Select onChange={updatePage}>
           {Array(winNumber.count)
-            .fill(1)
+            .fill(0)
             .map((_, idx) => {
               return (
                 <option key={`option_${idx}`} value={idx}>
@@ -84,7 +83,7 @@ const HistoryContainer = () => {
           <strong>{winNumber.id}회</strong> 당첨결과
         </h4>
         <p className={styles.desc}>
-          {moment(winNumber).format("(YYYY년 MM월 DD일 추첨)")}
+          {moment(winNumber.data).format("(YYYY년 MM월 DD일 추첨)")}
         </p>
         <Lotto numbers={numbers} />
         <p className={styles.desc2}>당첨번호</p>
