@@ -1,0 +1,10 @@
+@use "/src/styles/constants/colors";
+
+.button {
+  color: colors.$WHITE;
+  background-color: colors.$DEEP_BLUE;
+  font-weight: 300;
+  height: 34px;
+  padding: 0 9px;
+  white-space: nowrap;
+}

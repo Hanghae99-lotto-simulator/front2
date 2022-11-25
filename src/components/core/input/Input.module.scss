@@ -1,0 +1,11 @@
+@use "/src/styles/constants/colors";
+@use "/src/styles/mixins/flexbox";
+
+.input {
+  width: 100%;
+  height: 34px;
+  border: 1px solid colors.$GRAYD;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 0 10px;
+}

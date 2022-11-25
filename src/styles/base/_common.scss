@@ -1,0 +1,19 @@
+@use "/src/styles/constants/colors";
+@use "/src/styles/mixins/flexbox";
+
+.rootContainer {
+}
+
+.commonContainer {
+  padding-top: 60px;
+  max-width: 900px;
+  min-width: 900px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.subTitle {
+  font-size: 30px;
+  font-weight: 100;
+  height: 63px;
+}

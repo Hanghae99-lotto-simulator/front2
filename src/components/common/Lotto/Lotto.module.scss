@@ -1,0 +1,11 @@
+@use "/src/styles/constants/colors";
+@use "/src/styles/mixins/flexbox";
+
+.lotto {
+  @include flexbox.flexbox {
+    gap: 20px;
+  }
+  background-color: colors.$GRAYF;
+  padding: 30px;
+  border-radius: 30px;
+}

@@ -1,0 +1,78 @@
+@use "/src/styles/constants/colors";
+@use "/src/styles/mixins/flexbox";
+
+.selectSection {
+  @include flexbox.flexbox(end);
+  gap: 5px;
+
+  .selectLabel {
+    font-size: 14px;
+    font-weight: 400;
+    color: colors.$GRAY5;
+    margin-right: 20px;
+  }
+}
+
+.resultSection {
+  @include flexbox.flexbox {
+    flex-direction: column;
+  }
+  padding: 60px;
+  margin-top: 10px;
+  border: 1px solid colors.$GRAYD;
+
+  .title {
+    font-size: 28px;
+    font-weight: 300;
+
+    strong {
+      color: colors.$RED;
+      font-weight: 500;
+    }
+  }
+
+  .desc {
+    color: colors.$GRAY7;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    margin-top: 9px;
+    margin-bottom: 26px;
+  }
+
+  .desc2 {
+    color: colors.$GRAY5;
+    margin-top: 10px;
+  }
+}
+
+.infoTable {
+  margin-top: 40px;
+  width: 100%;
+  border-top: 1px solid colors.$GRAY3;
+  border-collapse: initial;
+
+  td,
+  th {
+    border-bottom: 1px solid colors.$GRAYD;
+    border-left: 1px solid colors.$GRAYD;
+    padding: 13px 9px;
+    font-size: 14px;
+    line-height: 22px;
+    vertical-align: middle;
+
+    strong {
+      font-weight: 500;
+    }
+  }
+
+  th {
+    background-color: colors.$GRAYF5;
+  }
+
+  td {
+    color: colors.$GRAY7;
+    font-weight: 300;
+    text-align: center;
+  }
+}

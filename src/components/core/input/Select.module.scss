@@ -1,0 +1,9 @@
+@use "/src/styles/constants/colors";
+
+.select {
+  font-size: 14px;
+  font-weight: 300;
+  height: 34px;
+  border: 1px solid colors.$GRAYD;
+  border-radius: 0;
+}
