@@ -66,11 +66,11 @@ const HistoryContainer = () => {
         <span className={styles.selectLabel}>회차 바로가기</span>
         <Select onChange={updatePage}>
           {Array(winNumber.count)
-            .fill(0)
+            .fill(-1)
             .map((_, idx) => {
               return (
-                <option key={`option_${idx}`} value={idx}>
-                  {idx}
+                <option key={`option_${idx}`} value={idx+1}>
+                  {idx+1}
                 </option>
               );
             })}
