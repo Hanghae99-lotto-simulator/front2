@@ -83,7 +83,7 @@ const HistoryContainer = () => {
           <strong>{winNumber.id}회</strong> 당첨결과
         </h4>
         <p className={styles.desc}>
-          {moment(winNumber.data).format("(YYYY년 MM월 DD일 추첨)")}
+          {moment(winNumber.date).format("(YYYY년 MM월 DD일 추첨)")}
         </p>
         <Lotto numbers={numbers} />
         <p className={styles.desc2}>당첨번호</p>
