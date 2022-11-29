@@ -11,7 +11,7 @@ export const requestBuyLotto = async (count) => {
 };
 
 export const getPageWinNumber = async (page) => {
-  const response = await instance.get(`/api/winningNums/${page}`);
+  const response = await instance.get(`/api/lottoWinsV2/${page}`);
 
   return response.data;
 };
