@@ -4,37 +4,33 @@ import Select from "components/core/input/Select";
 import { getPageWinCount, getPageWinNumber } from "model/axios";
 import moment from "moment";
 import { useCallback, useEffect, useMemo, useState } from "react";
-
 import styles from "./History.module.scss";
-
 const HistoryContainer = () => {
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(960);
   const [winNumber, setWinNumber] = useState(null);
   const [pageWinCount, setPageWinCount] = useState(null);
-
+  console.log(winNumber);
   const numbers = useMemo(() => {
     let list = [];
-    let list2=[];
+    let list2 = [];
     if (winNumber) {
       Object.entries(winNumber?.roundArray).forEach(([key, value]) => {
-          list2.push(value);
+        list2.push(value);
       });
-      if(winNumber?.bonusNum){
-        list.push(list2)
+      if (winNumber?.bonusNum) {
+        list.push(list2);
         list.push(winNumber?.bonusNum);
       }
     }
     return list;
   }, [winNumber]);
-
   const updateUi = useCallback(
     async (e) => {
       e?.preventDefault();
-
       try {
         const response = await getPageWinNumber(page);
         // const response2 = await getPageWinCount(page);
-        console.log(response.data)
+        console.log(response.data);
         setWinNumber(response.data);
         setPageWinCount(response.data);
       } catch (error) {
@@ -43,41 +39,47 @@ const HistoryContainer = () => {
     },
     [page]
   );
-
   const updatePage = useCallback((e) => {
     const { value } = e.target;
-
     setPage(parseInt(value));
   }, []);
-
+  const SelectOption = useCallback(() => {
+    const options = [];
+    for (let i = winNumber.count; i > 0; i--) {
+      options.push(
+        <option key={`option_${i}`} value={i}>
+          {i}
+        </option>
+      );
+    }
+    return options;
+  }, [winNumber]);
   useEffect(() => {
     updateUi();
   }, []);
-
+  
   if (!winNumber && !pageWinCount) {
     return null;
   }
-
   return (
     <div className={"commonContainer"}>
       <h3 className={"subTitle"}>회차별 당첨번호</h3>
-
       <form className={styles.selectSection} onSubmit={updateUi}>
         <span className={styles.selectLabel}>회차 바로가기</span>
         <Select onChange={updatePage}>
-          {Array(winNumber.count)
-            .fill(-1)
+          <SelectOption/>
+          {/* {Array(winNumber.count)
+            .fill()
             .map((_, idx) => {
               return (
-                <option key={`option_${idx}`} value={idx+1}>
-                  {idx+1}
+                <option key={`option_${idx}`} value={idx + 1}>
+                  {idx + 1}
                 </option>
               );
-            })}
+            })} */}
         </Select>
         <Button>조회</Button>
       </form>
-
       <div className={styles.resultSection}>
         <h4 className={styles.title}>
           <strong>{winNumber.id}회</strong> 당첨결과
@@ -140,5 +142,4 @@ const HistoryContainer = () => {
     </div>
   );
 };
-
 export default HistoryContainer;

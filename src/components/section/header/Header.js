@@ -10,6 +10,7 @@ const Header = (props) => {
     <header className={styles.headerContainer}>
       <Link to={"/"}>복권구매</Link>
       <Link to={"history"}>당첨결과</Link>
+      <Link to={"game"}>게임 결과</Link>
     </header>
   );
 };

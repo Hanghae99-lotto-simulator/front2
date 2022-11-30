@@ -16,14 +16,18 @@ const LottoBuyForm = ({ setLotto }) => {
     if (!count) {
       return;
     }
-
-    try {
-      const response = await requestBuyLotto(count);
-
-      setLotto(response.data);
-    } catch (error) {
-      alert("알 수 없는 에러가 발생하였습니다.");
+    if(count>10000){
+      alert("만개 이상이면 현금 5천만원 이상 입니다")
+    }else{
+      try {
+        const response = await requestBuyLotto(count);
+  
+        setLotto(response.data);
+      } catch (error) {
+        alert("알 수 없는 에러가 발생하였습니다.");
+      }
     }
+   
   };
 
   const setValue = useCallback((e) => {
