@@ -5,8 +5,9 @@ import { getPageWinCount, getPageWinNumber } from "model/axios";
 import moment from "moment";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import styles from "./History.module.scss";
+
 const HistoryContainer = () => {
-  const [page, setPage] = useState(960);
+  const [page, setPage] = useState(1043);
   const [winNumber, setWinNumber] = useState(null);
   const [pageWinCount, setPageWinCount] = useState(null);
   console.log(winNumber);
