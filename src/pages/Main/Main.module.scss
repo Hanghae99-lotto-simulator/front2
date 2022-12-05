@@ -1,11 +1,16 @@
 @use "/src/styles/constants/colors";
 @use "/src/styles/mixins/flexbox";
+@use "/src/styles/mixins/responsive";
 
 .lottoListSection {
+  @include responsive.only(ML);
+
   @include flexbox.flexbox {
     flex-direction: column;
-    gap: 20px;
+    
+    gap: 2em;
   }
+  
   padding: 60px;
   margin-top: 10px;
   border: 1px solid colors.$GRAYD;

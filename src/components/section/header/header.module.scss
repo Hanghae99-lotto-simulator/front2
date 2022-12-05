@@ -9,9 +9,10 @@
   padding: 0 20px;
   height: sizes.$HEADER;
   border-bottom: 3px solid colors.$DEEP_BLUE;
+  min-width: 511px;
 
   a {
-    font-size: 18px;
+    font-size: 1em;
     color: #252525;
     padding: 0 50px;
     line-height: sizes.$HEADER;
