@@ -13,10 +13,11 @@ const LottoBuyForm = ({ setLotto }) => {
   const onSubmitHandler = async (e) => {
     e.preventDefault();
 
-    if (!count) {
+
+    if(!count || count<=0 ){
+      alert("숫자를 정확히 입력해주세요")
       return;
-    }
-    if(count>10000){
+    }else if(count>10000){
       alert("만개 이상이면 현금 5천만원 이상 입니다")
     }else{
       try {
