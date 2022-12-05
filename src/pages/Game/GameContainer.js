@@ -13,6 +13,7 @@ const GameContainer=()=> {
       components = (
         <>
           <p className={styles.title}>당첨 결과</p>
+          <p className={styles.desc}>로또 게임 수 : {GambleInfo.data.totalCnt} 게임</p>
           <p className={styles.desc}>
             {/* <strong>Unique Code</strong> : {GambleInfo.uniqueCode} */}
           </p>
@@ -44,6 +45,7 @@ const GameContainer=()=> {
   return (
     <div className={'commonContainer'}>
       <h3 className='subTitle'>게임 결과 확인</h3>
+      
         <GameComfirmForm setGambleInfo={setGambleInfo}/>
         <GambleList/>
     </div>
