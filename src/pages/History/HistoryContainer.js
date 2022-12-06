@@ -7,7 +7,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import styles from "./History.module.scss";
 
 const HistoryContainer = () => {
-  const [page, setPage] = useState(1043);
+  const [page, setPage] = useState(1044);
   const [winNumber, setWinNumber] = useState(null);
   const [pageWinCount, setPageWinCount] = useState(null);
   console.log(winNumber);
