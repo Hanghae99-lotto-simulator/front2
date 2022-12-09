@@ -5,13 +5,13 @@ const instance = axios.create({
 });
 
 export const requestBuyLotto = async (count) => {
-  const response = await instance.post(`/api/lottoAutos/${count}`);
+  const response = await instance.post(`/api/lotto-autos/${count}`);
 
   return response.data;
 };
 
 export const getPageWinNumber = async (page) => {
-  const response = await instance.get(`/api/lottoWinsV3/${page}`);
+  const response = await instance.get(`/api/lotto-winsV3/${page}`);
 
   return response.data;
 };

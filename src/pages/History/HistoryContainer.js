@@ -58,7 +58,7 @@ const HistoryContainer = () => {
   useEffect(() => {
     updateUi();
   }, []);
-  
+
   if (!winNumber && !pageWinCount) {
     return null;
   }
@@ -68,7 +68,7 @@ const HistoryContainer = () => {
       <form className={styles.selectSection} onSubmit={updateUi}>
         <span className={styles.selectLabel}>회차 바로가기</span>
         <Select onChange={updatePage}>
-          <SelectOption/>
+          <SelectOption />
           {/* {Array(winNumber.count)
             .fill()
             .map((_, idx) => {
