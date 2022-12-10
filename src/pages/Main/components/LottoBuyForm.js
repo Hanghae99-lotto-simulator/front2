@@ -17,8 +17,8 @@ const LottoBuyForm = ({ setLotto }) => {
     if(!count || count<=0 ){
       alert("숫자를 정확히 입력해주세요")
       return;
-    }else if(count>10000){
-      alert("만개 이상이면 현금 5천만원 이상 입니다")
+    }else if(count>1000){
+      alert("1000개면 500만원 입니다")
     }else{
       try {
         const response = await requestBuyLotto(count);
