@@ -10,13 +10,20 @@ const GameComfirmForm=({setGambleInfo})=>{
     const onSubmitHandler = async (e) => {
         e.preventDefault();
     
-        if (!UniqueCode) {
-            return;
+        if (!Num) {
+           alert("회차 입력해주세요")
+           return;
         }
+        
         try {
             const response = await requestGamble(UniqueCode,Num);
-            console.log("결과값",response)
-            setGambleInfo(response);
+            if(response.success){
+                console.log("결과값",response)
+                setGambleInfo(response);
+            }else{
+                alert(response.error.message);
+            }
+            
         } catch (error) {
             alert("알 수 없는 에러가 발생하였습니다.");
         }

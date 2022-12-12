@@ -18,7 +18,7 @@ const LottoBuyForm = ({ setLotto }) => {
       alert("숫자를 정확히 입력해주세요")
       return;
     }else if(count>1000){
-      alert("1000개면 500만원 입니다")
+      alert("1000개 이상면 500만원 입니다")
     }else{
       try {
         const response = await requestBuyLotto(count);
@@ -28,7 +28,6 @@ const LottoBuyForm = ({ setLotto }) => {
         alert("알 수 없는 에러가 발생하였습니다.");
       }
     }
-   
   };
 
   const setValue = useCallback((e) => {
