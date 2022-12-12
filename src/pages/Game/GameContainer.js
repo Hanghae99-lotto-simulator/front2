@@ -8,7 +8,7 @@ const GameContainer=()=> {
 
   const GambleList = useCallback(() => {
     let components;
-    console.log(GambleInfo)
+    // console.log(GambleInfo)
     if (GambleInfo) {
       components = (
         <>

@@ -18,7 +18,7 @@ const GameComfirmForm=({setGambleInfo})=>{
         try {
             const response = await requestGamble(UniqueCode,Num);
             if(response.success){
-                console.log("결과값",response)
+                // console.log("결과값",response)
                 setGambleInfo(response);
             }else{
                 alert(response.error.message);
