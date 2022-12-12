@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# lotto-simulator
+![로또 시뮬레이터 로그](https://user-images.githubusercontent.com/96179069/206896075-23157209-30c6-45bf-8f8a-e908ccd5ec7c.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# ✋프로젝트 소개
+### 간단하게 로또를 구매하고, 회차를 통해 자신의 등수를 확인 할 수 있습니다.
 
-## Available Scripts
+# ✋아키텍처 설계도
+![아키텍처 설계도](https://user-images.githubusercontent.com/96179069/206906499-c58982b5-5106-4f53-a5eb-96f888d64d2e.png)
 
-In the project directory, you can run:
+<div align=center>
+  <h3 align="center"><b>🛠 Tech Stack 🛠</b></h3>
+<p>
+<img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=Java&logoColor=white" />
+<img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=Spring&logoColor=white" />
+<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
+<img src="https://img.shields.io/badge/linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=Docker&logoColor=white">
+  <img src="https://camo.githubusercontent.com/c1fc168684171582321954905e8b9dc4f59810243ed85e645f3b7938ee3145cb/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6d7973716c2d3434373941313f7374796c653d666f722d7468652d6261646765266c6f676f3d6d7973716c266c6f676f436f6c6f723d7768697465">
+  <img src="https://camo.githubusercontent.com/54a2f74f3cbb3cb810faa417fb9a56b4d947be01e868ab624b3f251a1062257b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f67697468756220616374696f6e732d3230383846463f7374796c653d666f722d7468652d6261646765266c6f676f3d67697468756220616374696f6e73266c6f676f436f6c6f723d7768697465">
+  <img src="https://camo.githubusercontent.com/a831a652fb5370367ee71ae4255e39623b9edf7e60ffbcf7ba356b1d82a09538/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f737072696e672064617461206a70612d4632384431413f7374796c653d666f722d7468652d6261646765266c6f676f3d737072696e67646174616a7061266c6f676f436f6c6f723d7768697465">
+</p>
+</div>
 
-### `yarn start`
+### 프론트엔드
+ - <img src="https://img.shields.io/badge/조정민-609926?style=for-the-badge&logo=Spring&logoColor=white"/>  <a href="https://github.com/jossiya">
+         <img src="https://img.shields.io/badge/jossiya_GitHub-609926?style=for-the-badge&logo=github&logoColor=white"/> </a>
+         
+### 백엔드
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- <img src="https://img.shields.io/badge/조정민-609926?style=for-the-badge&logo=Spring&logoColor=white"/>  <a href="https://github.com/jossiya">
+         <img src="https://img.shields.io/badge/jossiya_GitHub-609926?style=for-the-badge&logo=github&logoColor=white"/> </a>
+- <img src="https://img.shields.io/badge/김동현-609926?style=for-the-badge&logo=Spring&logoColor=white"/>  <a href="https://github.com/kidonge">
+         <img src="https://img.shields.io/badge/kidonge_Github-609926?style=for-the-badge&logo=github&logoColor=white"/> </a>
+- <img src="https://img.shields.io/badge/강병욱-609926?style=for-the-badge&logo=Spring&logoColor=white"/>  <a href="https://github.com/mookid214">
+         <img src="https://img.shields.io/badge/mookid214_Github-609926?style=for-the-badge&logo=github&logoColor=white"/> </a>
