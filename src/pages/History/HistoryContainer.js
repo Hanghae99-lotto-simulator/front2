@@ -10,7 +10,7 @@ const HistoryContainer = () => {
   const [page, setPage] = useState(1045);
   const [winNumber, setWinNumber] = useState(null);
   const [pageWinCount, setPageWinCount] = useState(null);
-  console.log(winNumber);
+  // console.log(winNumber);
   const numbers = useMemo(() => {
     let list = [];
     let list2 = [];
@@ -30,8 +30,7 @@ const HistoryContainer = () => {
       e?.preventDefault();
       try {
         const response = await getPageWinNumber(page);
-        // const response2 = await getPageWinCount(page);
-        console.log(response.data);
+        // console.log(response.data);
         setWinNumber(response.data);
         setPageWinCount(response.data);
       } catch (error) {
